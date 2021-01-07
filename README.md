@@ -1,16 +1,16 @@
 # Efektyvumo tyrimas
  Atliekama programos veikimo spartos analizė, veikimo greičio palyginimas po pakeitimų.
-## Lyginama sąrašas(list) ir klasė,  paleidžiant su debug.
+## Lyginama struktūra ir klasė,  paleidžiant su debug.
 ### <p align="center"> Failas su 100000 įrašų <p>
 |              |duomenų nuskaitymas| rusiavimas su sort f| dalinimo i dvi grupes 1  | dalinimo i dvi grupes 2
 |--------------|-------------------|--------------------------|-----------------------------------|-----------------------------------|
-|Sąrašas| 3.31222|35.5417 |0.754205 |1.26376 |
+|Struktūra| 3.31222|35.5417 |0.754205 |1.26376 |
 |Klasė| 2.4382|0.11805 |0.45458 |0.31487 |
 
 ### <p align="center"> Failas su 1000000 įrašų
 |              |duomenų nuskaitymas| rusiavimas su sort f| dalinimo i dvi grupes 1  | dalinimo i dvi grupes 2|
 |--------------|-------------------|--------------------------|-----------------------------------|-----------------------------------|
-|Sąrašas|31.0988 |428.759 | 7.41152|13.5668 |
+|Struktūra|31.0988 |428.759 | 7.41152|13.5668 |
 |Klasė| 25.6775| 1.57708|4.84897 |3.36172 |
 
 **Išvada:** pakeitimas iš sąrašo į klasę programos veikimo greičiui padarė įtaką, programa greičiau atliko veiksmus.
