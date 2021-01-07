@@ -1,30 +1,36 @@
-# Pirma_dalis_sutvarkyta
+# Efektyvumo tyrimas
+ Atliekama programos veikimo spartos analizė, veikimo greičio palyginimas po pakeitimų.
+## Lyginama sąrašas(list) ir klasė,  paleidžiant su debug.
+### <p align="center"> Failas su 100000 įrašų <p>
+|              |duomenų nuskaitymas| rusiavimas su sort f| dalinimo i dvi grupes 1  | dalinimo i dvi grupes 2
+|--------------|-------------------|--------------------------|-----------------------------------|-----------------------------------|
+|Sąrašas| 3.31222|35.5417 |0.754205 |1.26376 |
+|Klasė| 2.4382|0.11805 |0.45458 |0.31487 |
 
-# Studentai
+### <p align="center"> Failas su 1000000 įrašų
+|              |duomenų nuskaitymas| rusiavimas su sort f| dalinimo i dvi grupes 1  | dalinimo i dvi grupes 2|
+|--------------|-------------------|--------------------------|-----------------------------------|-----------------------------------|
+|Sąrašas|31.0988 |428.759 | 7.41152|13.5668 |
+|Klasė| 25.6775| 1.57708|4.84897 |3.36172 |
 
-Programa nuskaito studentų duomenis, kuriuos sudaro: vardas, pavardė, n pažymių ir egzamino įvertinimas, ir iš šių duomenų suskaičiuoja galutinį įvertinimą pagal formulę:
-> galutinis = 0.4 * vidurkis + 0.6 * egzaminas.
+**Išvada:** pakeitimas iš sąrašo į klasę programos veikimo greičiui padarė įtaką, programa greičiau atliko veiksmus.
 
-## Struktūra
-Programą sudaro 2 projektai:
- * Naudojamas vektor.
- * Naudojamas list.
+## Kompiliatoriaus optimizavimo lygiai, paleidžiant jau su release.
+### <p align="center">Failas su 100000 įrašų
+|              |duomenų nuskaitymas| rusiavimas su sort f| dalinimo i dvi grupes 1  | dalinimo i dvi grupes 2| failo dydis |
+|--------------|-------------------|--------------------------|-----------------------------------|-----------------------------------|-------------|
+|01|0.265085 | 0.0353979| 0.0496303| 0.0421788|33 KB |
+|02|0.252906 | 0.0301097|0.0511163 | 0.040909|39 KB |
 
-### Programos veikimas
-1. Vartotojo prašoma įvesti duomenų failo pavadinimą.
-2. Vartotojas įveda failą sudarančių eilučių skaičių. Šis skaičius naudojamas kuriant naujus sąrašus: prie pavadinimų „kietiakai“ ir „vargšiukai“ pridedamas skaičius.
-3. Vykdomas duomenų nuskaitymas, ekrane parašoma, kiek laiko užtruko šis veiksmas.
-4. Vartotojui leidžiama pasirinkti, kaip skaičiuoti galutinį balą: naudojant vidurkį arba naudojant medianą.
-5. Naudojama sąrašo dalinimo strategiją:
-   * 1 strategija: Bendro studentai konteinerio skaidymas į du naujus to paties tipo konteinerius: "vargšiukų" ir "kietiakų". Tokiu būdu tas pats studentas yra dvejuose konteineriuose: bendrame studentai ir viename iš suskaidytų (vargšiukai arba kietiakai).
-   * 2 strategija: Bendro studentų konteinerio skaidymas panaudojant tik vieną naują konteinerį: "kietiakai", o vargšiukai lieka bendrame studentų konteineryje, o kietakai perkeliami į naują.
-6. Vyksta studentų sąrašo dalinimas pagal strategijas, ekrane parašomas veiksmo laikas.
-   
-#### Nuorodos į skirtingas programos versijas:
- * [v0.1](https://github.com/salvijox/Pirma_dalis_sutvarkyta/tree/v0.1)
- * [v0.2](https://github.com/salvijox/Pirma_dalis_sutvarkyta/tree/v0.2)
- * [v0.3](https://github.com/salvijox/Pirma_dalis_sutvarkyta/tree/v0.3)
- * [v0.4](https://github.com/salvijox/Pirma_dalis_sutvarkyta/tree/v0.4)
- * [v0.5](https://github.com/salvijox/Pirma_dalis_sutvarkyta/tree/v0.5)
- * [v1.0](https://github.com/salvijox/Pirma_dalis_sutvarkyta/tree/v1.0)
-   
+### <p align="center"> Failas su 1000000 įrašų
+|              |duomenų nuskaitymas| Studentų sąrašo dalinimas| dalinimo i dvi grupes 1  | dalinimo i dvi grupes 2| failo dydis |
+|--------------|-------------------|--------------------------|-----------------------------------|-----------------------------------|-------------|
+|01|2.20557 |0.666925 |0.555915 |0.555104 | 33 KB|
+|02|2.01413 | 0.661778| 0.554651| 0.561185| 39 KB|
+
+*Apie tyrimą:*
+
+*  *Tyrimas atliktas su 100000, 1000000 studentų duomenų failais;*
+*  *Programa buvo lyginama su listais;*
+*  *Sąrašo dalinimui naudojama greičiausia (1) strategija;*
+*  *Testavimo sistemos parametrai: CPU – 2 GHz, RAM – 8,00 GB, SSD – 128 GB, HDD - 1 TB.*
