@@ -18,19 +18,22 @@
     <ClCompile Include="Studentai.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="03v.cpp">
+    <ClCompile Include="Program.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="03v1.cpp">
+    <ClCompile Include="Studentas_Class.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Studentai_Class.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="03v.h">
-      <Filter>Source Files</Filter>
+    <ClInclude Include="Studentas_Class.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="03v1.h">
-      <Filter>Source Files</Filter>
+    <ClInclude Include="Studentai_Class.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

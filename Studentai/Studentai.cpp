@@ -71,22 +71,22 @@ int fileWriteHighGradesStart = 0;
 int fileWriteHighGradesEnd = 0;
 
 
-int main()
-{
-	AnalyzeSpeedWithLists(0, 1000);
-	AnalyzeSpeedWithVectors(0, 1000);
-
-	AnalyzeSpeedWithLists(1, 10000);
-	AnalyzeSpeedWithVectors(1, 10000);
-
-	AnalyzeSpeedWithLists(2, 100000);
-	AnalyzeSpeedWithVectors(2, 100000);
-
-	AnalyzeSpeedWithLists(3, 1000000);
-	AnalyzeSpeedWithVectors(3, 1000000);
-
-	return 0;
-}
+//int main()
+//{
+//	AnalyzeSpeedWithLists(0, 1000);
+//	AnalyzeSpeedWithVectors(0, 1000);
+//
+//	AnalyzeSpeedWithLists(1, 10000);
+//	AnalyzeSpeedWithVectors(1, 10000);
+//
+//	AnalyzeSpeedWithLists(2, 100000);
+//	AnalyzeSpeedWithVectors(2, 100000);
+//
+//	AnalyzeSpeedWithLists(3, 1000000);
+//	AnalyzeSpeedWithVectors(3, 1000000);
+//
+//	return 0;
+//}
 
 void GetData(vector<StudentData>& data)
 {
