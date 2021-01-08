@@ -1,30 +1,18 @@
-# Pirma_dalis_sutvarkyta
+## v1.2 versija
 
-# Studentai
+*  *Klasėje realizuotas destruktorius, kopijavimo konstruktorius, kopijavimo priskyrimo operatorius ("Rule of three").*
 
-Programa nuskaito studentų duomenis, kuriuos sudaro: vardas, pavardė, n pažymių ir egzamino įvertinimas, ir iš šių duomenų suskaičiuoja galutinį įvertinimą pagal formulę:
-> galutinis = 0.4 * vidurkis + 0.6 * egzaminas.
+# Programa paleidžiama su debug.
+### <p align="center"> Failas su 100000 įrašų <p>
+|              |duomenų nuskaitymas| rusiavimas su sort f| dalinimo i dvi grupes 1  | dalinimo i dvi grupes 2
+|--------------|-------------------|--------------------------|-----------------------------------|-----------------------------------|
+|Operatorius| 2.3558|0.192967 |0.498966 |0.412205 |
+|Klasė| 2.4382|0.11805 |0.45458 |0.31487 |
 
-## Struktūra
-Programą sudaro 2 projektai:
- * Naudojamas vektor.
- * Naudojamas list.
+### <p align="center"> Failas su 1000000 įrašų
+|              |duomenų nuskaitymas| rusiavimas su sort f| dalinimo i dvi grupes 1  | dalinimo i dvi grupes 2|
+|--------------|-------------------|--------------------------|-----------------------------------|-----------------------------------|
+|Operatorius|26.0559 |2.8981 | 5.34561|4.21792 |
+|Klasė| 25.6775| 1.57708|4.84897 |3.36172 |
 
-### Programos veikimas
-1. Vartotojo prašoma įvesti duomenų failo pavadinimą.
-2. Vartotojas įveda failą sudarančių eilučių skaičių. Šis skaičius naudojamas kuriant naujus sąrašus: prie pavadinimų „kietiakai“ ir „vargšiukai“ pridedamas skaičius.
-3. Vykdomas duomenų nuskaitymas, ekrane parašoma, kiek laiko užtruko šis veiksmas.
-4. Vartotojui leidžiama pasirinkti, kaip skaičiuoti galutinį balą: naudojant vidurkį arba naudojant medianą.
-5. Naudojama sąrašo dalinimo strategiją:
-   * 1 strategija: Bendro studentai konteinerio skaidymas į du naujus to paties tipo konteinerius: "vargšiukų" ir "kietiakų". Tokiu būdu tas pats studentas yra dvejuose konteineriuose: bendrame studentai ir viename iš suskaidytų (vargšiukai arba kietiakai).
-   * 2 strategija: Bendro studentų konteinerio skaidymas panaudojant tik vieną naują konteinerį: "kietiakai", o vargšiukai lieka bendrame studentų konteineryje, o kietakai perkeliami į naują.
-6. Vyksta studentų sąrašo dalinimas pagal strategijas, ekrane parašomas veiksmo laikas.
-   
-#### Nuorodos į skirtingas programos versijas:
- * [v0.1](https://github.com/salvijox/Pirma_dalis_sutvarkyta/tree/v0.1)
- * [v0.2](https://github.com/salvijox/Pirma_dalis_sutvarkyta/tree/v0.2)
- * [v0.3](https://github.com/salvijox/Pirma_dalis_sutvarkyta/tree/v0.3)
- * [v0.4](https://github.com/salvijox/Pirma_dalis_sutvarkyta/tree/v0.4)
- * [v0.5](https://github.com/salvijox/Pirma_dalis_sutvarkyta/tree/v0.5)
- * [v1.0](https://github.com/salvijox/Pirma_dalis_sutvarkyta/tree/v1.0)
-   
+**Išvada:** pakeitimas reikšmingos įtakos programos veikimo greičiui nepadarė.
