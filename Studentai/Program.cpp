@@ -6,10 +6,10 @@ using namespace std;
 
 int main()
 {
-	Studentai_Class studentai;
+	list<int> grades = { 5, 6, 7, 8 };
+	Studentas_Class studentas("Vardenis", "Pavardenis", 8, grades);
 
-	studentai.analyzeSpeedWithLists(1, 100000);
-	studentai.analyzeSpeedWithLists(1, 1000000);
+	cout << studentas.getFullName() << endl;
 
 	return 0;
 }
