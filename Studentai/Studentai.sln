@@ -7,6 +7,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Studentai", "Studentai.vcxp
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Testas", "..\Testas\Testas.vcxproj", "{F490C5CC-ED5D-4B29-8C5E-5BD6D0AF8DBC}"
 EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Setup", "..\Setup\Setup.vdproj", "{58C26C04-FA6F-465E-8041-50FC11C69B1D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -31,6 +33,10 @@ Global
 		{F490C5CC-ED5D-4B29-8C5E-5BD6D0AF8DBC}.Release|x64.Build.0 = Release|x64
 		{F490C5CC-ED5D-4B29-8C5E-5BD6D0AF8DBC}.Release|x86.ActiveCfg = Release|Win32
 		{F490C5CC-ED5D-4B29-8C5E-5BD6D0AF8DBC}.Release|x86.Build.0 = Release|Win32
+		{58C26C04-FA6F-465E-8041-50FC11C69B1D}.Debug|x64.ActiveCfg = Debug
+		{58C26C04-FA6F-465E-8041-50FC11C69B1D}.Debug|x86.ActiveCfg = Debug
+		{58C26C04-FA6F-465E-8041-50FC11C69B1D}.Release|x64.ActiveCfg = Release
+		{58C26C04-FA6F-465E-8041-50FC11C69B1D}.Release|x86.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
