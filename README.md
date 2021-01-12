@@ -27,4 +27,9 @@ Programą sudaro 2 projektai:
  * [v0.4](https://github.com/salvijox/Pirma_dalis_sutvarkyta/tree/v0.4)
  * [v0.5](https://github.com/salvijox/Pirma_dalis_sutvarkyta/tree/v0.5)
  * [v1.0](https://github.com/salvijox/Pirma_dalis_sutvarkyta/tree/v1.0)
+ 
+ * [v1.1](https://github.com/salvijox/Antras/tree/v1.1)
+ * [v1.2](https://github.com/salvijox/Antras/tree/v1.2)
+ * [v1.5](https://github.com/salvijox/Antras/tree/v1.5)
+ * [v2.0](https://github.com/salvijox/Antras/tree/v2.0)
    
